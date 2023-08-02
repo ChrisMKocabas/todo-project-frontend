@@ -6,7 +6,7 @@ import Footer from "./pages/Footer";
 import Navigation from "./pages/Navigation";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
-import Todos from "./Todos";
+import Todos from "./pages/Todos";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import { AuthContextProvider } from "./context/AuthContext";
 

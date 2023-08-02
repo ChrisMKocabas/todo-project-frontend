@@ -1,13 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-
-type Props = {};
-
-const About = (props: Props) => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/grocery");
-  };
+const About = () => {
   return (
     <div className="page-style align-self-center d-flex flex-column align-items-center justify-items-center">
       <h1>About</h1>

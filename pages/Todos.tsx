@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Todo from "./components/ui/Todo";
-import { TodoType } from "./models/TodoType";
+import Todo from "../components/ui/Todo";
+import { TodoType } from "../models/TodoType";
 import {
   getTodos,
   addTodo,
   updateTodo,
   deleteTodo,
-} from "./components/controller/TodoService";
-import AddTodoModal from "./components/ui/AddTodoModal";
+} from "../components/controller/TodoService";
+import AddTodoModal from "../components/ui/AddTodoModal";
 
 const Todos = () => {
   const [todos, setTodos] = useState<TodoType[]>([]);
@@ -30,10 +30,6 @@ const Todos = () => {
     } catch (err) {
       console.error(err);
     }
-  };
-
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
