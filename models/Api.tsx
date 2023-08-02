@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://todo-backend-m1by.onrender.com:4000/",
+  baseURL: "http://localhost:4000/",
+  // baseURL: "http://todo-backend-m1by.onrender.com:4000/",
 });
 
 // Add an interceptor to include the authorization header with the token

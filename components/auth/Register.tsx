@@ -36,7 +36,8 @@ const Register = () => {
     };
     try {
       const response = await axios.post(
-        "http://todo-backend-m1by.onrender.com:4000/register",
+        "http://localhost:4000/register",
+        // "http://todo-backend-m1by.onrender.com:4000/register",
         data,
         config
       );
