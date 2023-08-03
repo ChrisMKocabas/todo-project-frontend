@@ -26,7 +26,7 @@ const AddTodoModal = ({ isOpen, onClose, onAddTodo }: Props) => {
     onAddTodo(formData);
     setFormData({
       title: "",
-      description: "",
+      description: " ",
       status: false,
       _id: 0,
       user: 0,
