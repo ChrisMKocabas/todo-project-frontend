@@ -9,7 +9,7 @@ type PropsTodo = {
   onToggleStatus: () => void;
 };
 
-const Todo = ({ todo, onDelete, onUpdate, onToggleStatus }: PropsTodo) => {
+const Todo = ({ todo, onDelete, onUpdate }: PropsTodo) => {
   const [isEditMode, setIsEditMode] = useState(false);
   const [formData, setFormData] = useState<TodoType>(todo);
 
